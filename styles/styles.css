@@ -19,6 +19,8 @@ display: inline-flex;
 padding-left: 30px;
 padding-right: 30px;
 column-gap: 30px;
+transition-property: color;
+transition-duration: 0.7s;
 
 }
 
@@ -55,9 +57,11 @@ display: flex;
 font-style: inherit;
 font-size: 15px;
 }
+
 header{
 background-color: rgb(237, 218, 223);
 }
+
 main{
 background-color: rgb(231,231,231);
 }
@@ -69,11 +73,33 @@ background-color: lightgray;
 .titulo_principal{
 text-align: center;
 }
+@keyframes mi_animation{
+  0%{background-color: rgb(237, 218, 223);
+    transform: rotate(0);
+
+  }
+  10%{background-color: lightgray;
+    transform: rotate(10deg);
+
+  }
+  70%{
+
+    background-color: rgb(237, 218, 223) ;
+    transform: rotate(340deg);
+  }
+
+}
 #logo{
 align-items: inherit;
 display: flex;
 justify-content: center;
 padding: 10px 0;
+background-color: rgb(237, 218, 223);
+margin: auto;
+width: 200px;
+animation-name: mi_animation;
+animation-duration: 3s;
+
 }
 
 .table
