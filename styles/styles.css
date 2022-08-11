@@ -7,7 +7,27 @@ color: dimgrey;
 font-size: 30ox;
 font-family: 'Roboto Slab', serif;
 }
+/*.nav a{
+background: rgba( 255, 255, 255, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 15px solid rgba( 255, 255, 255, 0.18 );
 
+display: inline-flex;
+padding-left: 30px;
+padding-right: 30px;
+column-gap: 30px;
+transition-property: color;
+transition-duration: 0.7s;
+
+}*/
+
+
+.menu:hover {
+color: lightsalmon;
+}
 .search{
 color: lightpink;
 }
@@ -130,6 +150,39 @@ flex-wrap: wrap;
 
 @media (max-width: 768px){
 
+
+  @keyframes mi_animation_mobil{
+  0%{background-color: rgb(237, 218, 223);
+    transform: rotate(0);
+
+  }
+  10%{background-color: lightgray;
+    transform: rotate(10deg);
+
+  }
+  70%{
+
+    background-color: rgb(237, 218, 223) ;
+    transform: rotate(340deg);
+  }
+
+}
+#radial-mobil{
+align-items: inherit;
+display: flex;
+justify-content: center;
+padding: 10px 0;
+background-color: rgb(237, 218, 223);
+margin: auto;
+width: 200px;
+animation-name: mi_animation_mobil;
+animation-duration: 3s;
+
+}
+  .menu-desk{
+    display: none;
+  }
+
 .menu_mobile{
   display: flex;
   background-color: transparent;
@@ -247,4 +300,13 @@ footer{
   display: flex;
   flex-wrap: wrap;
 }
+}
+
+@media (min-width: 769px){
+
+.menu_mobil{
+  display: none;
+}
+
+
 }
