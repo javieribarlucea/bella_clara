@@ -7,27 +7,7 @@ color: dimgrey;
 font-size: 30ox;
 font-family: 'Roboto Slab', serif;
 }
-.nav a{
-background: rgba( 255, 255, 255, 0.45 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 5.5px );
--webkit-backdrop-filter: blur( 5.5px );
-border-radius: 10px;
-border: 15px solid rgba( 255, 255, 255, 0.18 );
 
-display: inline-flex;
-padding-left: 30px;
-padding-right: 30px;
-column-gap: 30px;
-transition-property: color;
-transition-duration: 0.7s;
-
-}
-
-
-.menu:hover {
-color: lightsalmon;
-}
 .search{
 color: lightpink;
 }
