@@ -1,7 +1,10 @@
 .menu_mobil{
   display: none;
 }
+.search_mobile{
+  display: none;
 
+}
 .descripcion{
 color: dimgrey;
 font-size: 30ox;
@@ -146,8 +149,8 @@ flex-wrap: wrap;
   vertical-align: middle;
 }
 .formul{
-  align-items: flex-end;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 
 
