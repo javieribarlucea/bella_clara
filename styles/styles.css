@@ -1,4 +1,4 @@
-.menu_mobile{
+.menu_mobil{
   display: none;
 }
 
@@ -23,7 +23,10 @@ transition-property: color;
 transition-duration: 0.7s;
 
 }*/
-
+.nav{
+  display: flex;
+  justify-content: center;
+}
 
 .menu:hover {
 color: lightsalmon;
@@ -74,18 +77,18 @@ background-color: lightgray;
 text-align: center;
 }
 @keyframes mi_animation{
-  0%{background-color: rgb(237, 218, 223);
+  0%{background-color: transparent;
     transform: rotate(0);
 
   }
-  10%{background-color: lightgray;
+  10%{background-color: transparent;
     transform: rotate(10deg);
 
   }
   70%{
 
-    background-color: rgb(237, 218, 223) ;
-    transform: rotate(340deg);
+    background-color: transparent ;
+    transform: rotate(355deg);
   }
 
 }
@@ -94,11 +97,11 @@ align-items: inherit;
 display: flex;
 justify-content: center;
 padding: 10px 0;
-background-color: rgb(237, 218, 223);
+background-color: transparent;
 margin: auto;
 width: 200px;
 animation-name: mi_animation;
-animation-duration: 3s;
+animation-duration: 4s;
 
 }
 
@@ -148,21 +151,90 @@ flex-wrap: wrap;
 }
 
 
+
+.icons {
+    display: inline-flex;
+    column-gap: 400px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property:
+        outline-offset, outline-color,
+        background-color;
+    transition-duration: .25s;
+    padding: 25px;
+}
+
+.icon:hover {
+    outline-offset: 7px;
+}
+
+.icon:hover i {
+    animation: shake .25s;
+}
+
+.icon--instagram:hover {
+    background-image: radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%,
+            #285AEB 90%);
+    outline-color: #a02d76;
+}
+
+.icon--twitter:hover {
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.icon--facebook:hover {
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
 @media (max-width: 768px){
 
 
   @keyframes mi_animation_mobil{
-  0%{background-color: rgb(237, 218, 223);
+  0%{background-color: transparent;
     transform: rotate(0);
 
   }
-  10%{background-color: lightgray;
+  10%{background-color: transparent;
     transform: rotate(10deg);
 
   }
   70%{
 
-    background-color: rgb(237, 218, 223) ;
+    background-color: transparent ;
     transform: rotate(340deg);
   }
 
@@ -182,13 +254,20 @@ animation-duration: 3s;
   .menu-desk{
     display: none;
   }
+  .best_desk{
+    display: none;
 
-.menu_mobile{
-  display: flex;
-  background-color: transparent;
+  }
+
+
+
+.menu_mobil{
+  display: grid;
+  background-color: rgb(237, 218, 223);
   padding: 20px 20px;
  border-radius: 15px;
 
+ 
 }
 .marcas  {
 display: inline-flex;
@@ -237,16 +316,24 @@ footer{
   display: flex;
   flex-wrap: wrap;
 }
+.container-fluid{
+  background-color: rgb(237, 218, 223);
+}
 
 }
 @media (max-width: 480px){
 
+.container-fluid{
+  background-color: rgb(237, 218, 223);
+}
 
-  .menu_mobile{
-  display: flex;
-  background-color: transparent;
+
+.menu_mobil{
+  display: grid;
+  background-color: rgb(237, 218, 223);
   padding: 20px 20px;
  border-radius: 15px;
+
  
 }
   .marcas  {
@@ -302,11 +389,3 @@ footer{
 }
 }
 
-@media (min-width: 769px){
-
-.menu_mobil{
-  display: none;
-}
-
-
-}
