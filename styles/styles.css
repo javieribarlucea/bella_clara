@@ -17,14 +17,12 @@ backdrop-filter: blur( 5.5px );
 -webkit-backdrop-filter: blur( 5.5px );
 border-radius: 10px;
 border: 15px solid rgba( 255, 255, 255, 0.18 );
-
 display: inline-flex;
 padding-left: 30px;
 padding-right: 30px;
 column-gap: 30px;
 transition-property: color;
 transition-duration: 0.7s;
-
 }*/
 .nav{
   display: flex;
@@ -68,9 +66,7 @@ header{
 background-color: rgb(237, 218, 223);
 }
 
-main{
-background-color: rgb(231,231,231);
-}
+
 .titulo{
 text-align: center;
 color: lightslategray;
@@ -129,8 +125,8 @@ animation-duration: 4s;
   border-radius: 25px;
 }
 .table-item p {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -144,7 +140,7 @@ flex-wrap: wrap;
 .marcas img {
   
   display: flex;
-	width: 30%;
+  width: 30%;
   height: 30%;
   vertical-align: middle;
 }
@@ -391,4 +387,3 @@ footer{
   flex-wrap: wrap;
 }
 }
-
