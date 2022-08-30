@@ -9,31 +9,11 @@
   display: none;
 
 }
-
-
-.pagos img{
-  width: 40px;
-  height: 40px
-}
-.descripcion{
+descripcion{
 color: dimgrey;
 font-size: 30ox;
 font-family: 'Roboto Slab', serif;
 }
-/*.nav a{
-background: rgba( 255, 255, 255, 0.45 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 5.5px );
--webkit-backdrop-filter: blur( 5.5px );
-border-radius: 10px;
-border: 15px solid rgba( 255, 255, 255, 0.18 );
-display: inline-flex;
-padding-left: 30px;
-padding-right: 30px;
-column-gap: 30px;
-transition-property: color;
-transition-duration: 0.7s;
-}*/
 .nav{
   display: flex;
   justify-content: center;
@@ -57,29 +37,16 @@ display: flex;
 }
 .final{
   display: inline-flex;
-}
-.final li,img{
+
+  li,img{
   display: flex;
   column-gap:15px;
   flex-wrap: wrap;
-  
-
 }
-.pagos{
-  display: flex;
-  column-gap:5px;
-  flex-wrap: wrap;
 }
-
-.mail {
-font-style: inherit;
-font-size: 15px;
-}
-
 header{
 background-color: rgb(237, 218, 223);
 }
-
 
 .titulo{
 text-align: center;
@@ -103,7 +70,6 @@ text-align: center;
     background-color: transparent ;
     transform: rotate(355deg);
   }
-
 }
 #logo{
 align-items: inherit;
@@ -117,33 +83,29 @@ animation-name: mi_animation;
 animation-duration: 4s;
 
 }
-
 .table
  {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-   
-}
+  }
 
 .table-item{
   border:thin gray solid;
   padding:0 2em;
   border-radius: 25px;
-}
-.table-item img {
+  img {
   width: 250px;
   object-fit: cover;
   vertical-align: middle;
   border-radius: 25px;
 }
-.table-item p {
+p {
   display: flex;
   justify-content: center;
 }
-
-
+}
 
 .marcas  {
   display: flex;
@@ -153,12 +115,10 @@ animation-duration: 4s;
   
 }
 
-}
+
 .formul{
   display: flex;
  }
-
-
 .icons {
     display: inline-flex;
     column-gap: 400px;
@@ -217,8 +177,6 @@ animation-duration: 4s;
     background-color:#26D367;
     outline-color:  #26D367;
 }
-
-
 @keyframes shake {
     10% {
         transform: rotate(15deg);
@@ -237,6 +195,35 @@ animation-duration: 4s;
     }
 }
 
+@mixin medida($ancho,$alto) {
+	width:$ancho;
+	height:$alto
+}
+.visa{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+
+.master{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.amex{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.diner{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.mp{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.todop{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
 @media (max-width: 768px){
 
 
@@ -268,7 +255,8 @@ animation-name: mi_animation_mobil;
 animation-duration: 3s;
 
 }
-  .menu-desk{
+
+.menu-desk{
     display: none;
   }
   .best_desk{
@@ -290,14 +278,13 @@ animation-duration: 3s;
 display: inline-flex;
 grid-template-columns: repeat(3,200px);
 flex-wrap: wrap;
- 
-}
-.marcas img {
+img {
   width: 50%;
   flex-wrap: wrap;
 }
 
-
+ 
+}
 .nav a{
 background: rgba( 255, 255, 255, 0.45 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -313,13 +300,13 @@ column-gap: 30px;
 }
 .final{
   display: inline-flex;
-}
-.final li{
+  li{
   display: flex;
   column-gap:5px;
   flex-wrap: wrap;
   
 
+}
 }
 .pagos{
   display: flex;
@@ -337,6 +324,35 @@ footer{
   background-color: rgb(237, 218, 223);
 }
 
+@mixin medida($ancho,$alto) {
+	width:$ancho;
+	height:$alto
+}
+.visa{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+
+.master{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.amex{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.diner{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.mp{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.todop{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
 }
 @media (max-width: 480px){
 
@@ -380,28 +396,61 @@ column-gap: 30px;
 }
 .final{
   display: inline-flex;
-}
-.final li{
+
+ li{
   display: flex;
   column-gap:5px;
   flex-wrap: wrap;
   
 
 }
+}
+
 .pagos{
   display: flex;
   column-gap:5px;
   flex-wrap: wrap;
   padding-left: 10px;
   justify-content: flex-end;
-}
+
 .pagos li{
 
   flex: auto;
 flex-wrap: wrap;
 }
+}
+
 footer{
   display: flex;
   flex-wrap: wrap;
+}
+@mixin medida($ancho,$alto) {
+	width:$ancho;
+	height:$alto
+}
+.visa{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+
+.master{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.amex{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.diner{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.mp{
+	@include medida(55px, 25px);
+	background-color:transparent;
+}
+.todop{
+	@include medida(55px, 25px);
+	background-color:transparent;
 }
 }

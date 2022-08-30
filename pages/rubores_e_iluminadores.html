@@ -12,13 +12,42 @@
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400&display=swap" rel="stylesheet">
-			<link   rel="stylesheet" href="../styles/estilos.css">
+			<link   rel="stylesheet" href="../styles/estilo.css">
 	</head>
 	<body>
 		<div>
 			<header >
 				<div class="gradiente-radial">
-			
+					<div class="log">
+						<button id="Log"type="button" class="btn btn-outline-secondary ml-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+							  <i class="ri-login-box-line"></i>
+							</button>
+							</div>
+
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+							        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							      </div>
+							      <div class="modal-body">
+							        <form class="form-signin">
+								      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+								      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+								      <label class="checkbox">
+								      <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+								      </label> 
+								   </form>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+							        <button type="button" class="btn btn-primary">Login</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
 				<div class="menu-desk">
 					<div >
 			    		<a href="../index.html" title="">
@@ -33,19 +62,14 @@
 							<a href="rubores_e_iluminadores.html"class="btn btn-outline-secondary"role="button">rubores e Iluminadores</a>
 							<a href="accesorios.html"class="btn btn-outline-secondary"role="button">acesorios</a>
 							<a href="skincare.html"class="btn btn-outline-secondary"role="button">skincare</a>
+							<form class="form-inline">
+								    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+								    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+						 	 	</form>
 						</nav>
 					</div>
 					
-				<div class="formul">
-					<form>
-						<div>
-							<input type="text"  placeholder="search" />
-							<input type="button" />
-						</div>
-					</form>
-
-					
-				</div>
+				
 			</div>
 				<div class="menu_mobil">
 						<nav class="navbar navbar-expand-lg  ">
@@ -136,12 +160,12 @@
  			 	<div class="col-md-4 offset-md-4">
 			<h3 class="final">Medios de Pago</h3>
 				<div class="pagos">
-					<img src="../archivos/pagos/visa.png" alt="visa" width="40" height="25"title="pagos">
-					<img src="../archivos/pagos/mastercard.png" alt="mastercard" width="40" height="25"title="pagos">
-					<img src="../archivos/pagos/amex.png" alt="amex" width="40" height="25"title="pagos">
-					<img src="../archivos/pagos/diners.png" alt="diners" width="40" height="25"title="pagos">
-					<img src="../archivos/pagos/mercadopago.png" alt="mp" width="40" height="25"title="pagos">
-					<img src="../archivos/pagos/todopag.png" alt="todopago" width="40" height="25"title="pagos">
+					<img src="../archivos/pagos/visa.png" alt="visa" title="pagos" class="visa">
+					<img src="../archivos/pagos/mastercard.png" alt="mastercard" title="pagos"class="master">
+					<img src="../archivos/pagos/amex.png" alt="amex" title="pagos"class="amex">
+					<img src="../archivos/pagos/diners.png" alt="diners" title="pagos"class="diner">
+					<img src="../archivos/pagos/mercadopago.png" alt="mp" title="pagos"class="mp">
+					<img src="../archivos/pagos/todopag.png" alt="todopago" title="pagos"class="todop">
 					</div>
 				</div>
 
@@ -150,13 +174,16 @@
 		
 				<div class="col-8">
 			<h3 class="final">contacto</h3>
+			<div class="icons">
 				<ul>
-					<li>5493513114144</li>
 					<li>
-						<a href="mailto:bellaclaramaquillaje@gmail.com" class="mail">bellaclaramaquillaje@gmail.com </a>
+					<a href="https://api.whatsapp.com/send?phone=05493513114144&text=Hola,Nececito mas informacion!" class="icon icon--whatsapp"target="_blank"><i class="ri-whatsapp-line"></i></a></li>
+					<li>
+						<a href="mailto:bellaclaramaquillaje@gmail.com" class="icon icon--mail"target="_blank"><i class="ri-mail-line"></a></i>
 					</li>
-					<li>Dean Funes 416 - centro - córdoba capital - cP5000</li>
+					<li><a href="https://goo.gl/maps/kPfjrmCFtBtyAKoU8"class="icon icon--map"target="_blank"><i class="ri-map-pin-line"></i></a></li>
 				</ul>
+				</div>
 				</div>
 				<div class="col-3">
 			<h3 class="final">Nuestras redes</h3>
