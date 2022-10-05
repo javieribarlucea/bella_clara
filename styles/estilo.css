@@ -243,7 +243,8 @@ header {
 .somos {
   display: inline;
   max-width: 40ch;
-  text-align: justify;
+  text-align: center;
+  font-weight: bold;
 }
 
 .container2 {
