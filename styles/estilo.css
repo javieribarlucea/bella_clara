@@ -10,6 +10,11 @@ h2 {
   justify-content: center;
 }
 
+.firma {
+  text-align: center;
+  font-weight: bold;
+}
+
 .menu_mobil {
   display: none;
 }
