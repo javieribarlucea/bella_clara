@@ -4,6 +4,11 @@
   display: grid;
   justify-content: end;
 }
+h2{
+  align-items: inherit;
+  display: flex;
+  justify-content: center;
+}
 .menu_mobil{
   display: none;
 }
